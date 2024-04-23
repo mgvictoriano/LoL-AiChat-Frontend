@@ -56,7 +56,7 @@ async function renderChampions() {
         (character) =>
             `<div class="timeline-carousel__item" 
  onclick="onChangeChampionSelected(${character.id}, '${character.imageUrl}')">
- 
+
         <div class="timeline-carousel__image">
           <div class="media-wrapper media-wrapper--overlay"
             style="background: url('${character.imageUrl}') center center; 
@@ -71,6 +71,8 @@ async function renderChampions() {
       </div>`
     );
 
+    console.log(elements);
+    
     state.views.carousel.innerHTML = elements.join(" ");
 }
 
