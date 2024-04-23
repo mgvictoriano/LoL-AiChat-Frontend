@@ -1,6 +1,6 @@
 const routes = {
-    champions: "http://localhost:8015/api/champions",
-    ask: "http://localhost:8015/champions/{id}/ask"
+    champions: "http://168.75.107.164:8015/api/champions",
+    ask: "http://168.75.107.164:8015/champions/{id}/ask"
 };
 
 const apiService = {
