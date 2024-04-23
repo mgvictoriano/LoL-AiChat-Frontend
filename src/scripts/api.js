@@ -54,8 +54,9 @@ async function renderChampions() {
     const championsData = state.values.champions;
     const elements = championsData.map(
         (character) =>
-            ` <div class="timeline-carousel__item" 
+            `<div class="timeline-carousel__item" 
  onclick="onChangeChampionSelected(${character.id}, '${character.imageUrl}')">
+ 
         <div class="timeline-carousel__image">
           <div class="media-wrapper media-wrapper--overlay"
             style="background: url('${character.imageUrl}') center center; 
